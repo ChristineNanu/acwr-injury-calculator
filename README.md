@@ -2,6 +2,9 @@
 
 A lightweight browser-based tool for estimating training load risk using the Acute:Chronic Workload Ratio (ACWR). It helps athletes, coaches, and fitness enthusiasts quickly compare this week's training load with the recent workload baseline and spot when training is ramping up too quickly.
 
+![Output Example](./Screenshots/output-example.png)
+![Terminal Run](./Screenshots/terminal-run.png)
+
 ## What it does
 
 The app asks for:
