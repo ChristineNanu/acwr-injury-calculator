@@ -117,7 +117,7 @@
     <div id="result"></div>
 
     <p class="footnote">
-      ACWR = this week's load ÷ your rolling 4-week average. In practice, a ratio around 0.85–1.25 is usually the most sustainable zone, while values above about 1.5 are more likely to reflect a rapid spike in workload. This is a simplified educational estimate, not medical advice.
+      ACWR = this week's load ÷ your previous 3-week average. In practice, a ratio around 0.85–1.25 is usually the most sustainable zone, while values above about 1.5 are more likely to reflect a rapid spike in workload. This is a simplified educational estimate, not medical advice.
     </p>
   </div>
 
@@ -138,7 +138,7 @@ function calculateACWR() {
   }
 
   const acute = w1; // most recent week = acute load
-  const chronic = (w1 + w2 + w3 + w4) / 4; // rolling 4-week average = chronic load
+  const chronic = (w2 + w3 + w4) / 3; // previous 3 weeks = chronic baseline
   const acwr = chronic === 0 ? 0 : acute / chronic;
 
   let riskClass, riskLabel, message;
